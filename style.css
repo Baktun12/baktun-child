@@ -7,3 +7,17 @@ Template: twentytwenty
 Version: 0.1.0 
 Text Domain: baktun-child
 */
+
+
+.min-main-logo {
+    display: block;
+    width: 80px;
+    margin: 0 auto; 
+}
+
+@media (min-width: 1000px){
+
+    .header-titles .site-title, .header-titles .site-logo, .header-titles .site-description {
+        margin: 1rem 0 0 1.4rem;
+    }
+}
