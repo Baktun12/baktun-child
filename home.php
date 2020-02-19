@@ -15,6 +15,13 @@ get_header();
     </video>
 </div>
 
+<div id="info-links">
+    <p>Events</p>
+    <p>Videos</p>
+    <p>Workshops</p>
+    <p>Volunteer</p>
+</div>
+
 </main><!-- #site-content -->
 <?php	
 get_footer();
