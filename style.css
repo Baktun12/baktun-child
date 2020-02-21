@@ -21,3 +21,163 @@ Text Domain: baktun-child
         margin: 1rem 0 0 1.4rem;
     }
 }
+
+
+/* Links section */
+
+
+
+#links-section{
+  padding:20px;
+  background-color: black;
+}
+
+#links-section ul{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#links-section li{
+   display: inline-block;
+   margin: 10px 10px;
+   
+}
+
+
+/* Button styles in links section */
+
+#events-btn{
+  background-color: #3aad21;
+}
+
+#videos-btn{
+  background-color: #bf1d99;
+}
+
+#workshops-btn{
+  background-color: #e68600;
+}
+
+#volunteer-btn{
+  background-color: #006fed;
+}
+
+
+
+/*
+BOOK POP EFFECT SECTION
+*/
+
+#book-effect{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+  background: #fff;
+}
+
+.book {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 300px;
+  cursor: pointer;
+  backface-visibility: visible;
+}
+
+.book2 {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 300px;
+  cursor: pointer;
+  backface-visibility: visible;
+  margin-left: 300px;
+}
+
+
+
+.front, .back{
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  top: 0; left: 0;
+  transform-origin: left center;
+  transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+}
+
+.front, .back {
+  background: navy;
+  transition: 0.3s;
+}
+
+.front{
+  color: white;
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.back {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+
+.book:hover .front {
+  transform: rotateY(-160deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  background-color: black;
+  color: transparent;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  
+}
+
+
+.book:hover .back {
+  transform: rotateY(-20deg) scale(1.1);
+  background-color: #ccc;
+  border-style: solid;
+  border-color: black;
+  width: 200px;
+  height: 200px;
+}
+
+
+.book2:hover .front {
+  transform: rotateY(-160deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  background-color: black;
+  color: transparent;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  z-index: 1;
+
+  
+}
+
+
+.book2:hover .back {
+  transform: rotateY(-20deg) scale(1.1);
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  color: white;
+  
+}
+
+
+
+#events{
+  text-align:center;
+  padding: 30px;
+}
+
+#shows-info{
+  position: absolute;
+  margin-right: 100px;
+  z-index: 2;
+}

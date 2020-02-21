@@ -15,12 +15,54 @@ get_header();
     </video>
 </div>
 
-<div id="info-links">
-    <p>Events</p>
-    <p>Videos</p>
-    <p>Workshops</p>
-    <p>Volunteer</p>
+<!------- LINKS SECTION -------->
+
+   <div id="links-section">
+   
+      <ul>
+         <li><a href="#"><button id="events-btn">Events</button></a></li>
+         <li><a href="#"><button id="videos-btn">Videos</button></a></li>
+         <li><a href="#"><button id="workshops-btn">Workshops</button></a></li>
+         <li><a href="#"><button id="volunteer-btn">Volunteer</button></a></li>
+      </ul>
+   
+   </div>
+
+
+<!---- OPEN BOOK EFFECT - STLL WORKING ON THIS ------->
+
+<div id="book-effect">
+    
+    <div class="book">
+        <div class="back"></div>
+
+        <div class="front">
+          <div id="events">Box 1</div>
+      </div>
+    </div>
+
+    <div class="book2">
+           <div class="back"> <div id="shows-info">This is some information</div></div>
+           <div class="front">
+             <div id="events">Box2</div>
+         </div>
+   </div>
+   
 </div>
+
+
+
+<!----- Comment Section ----->
+
+
+<div id="comment-box">
+   
+   Let us know what you think?
+   
+   
+</div>
+
+
 
 </main><!-- #site-content -->
 <?php	
