@@ -57,6 +57,7 @@
 					<?php } ?>
 
 					<div class="header-titles">
+					<a href="<?php echo get_home_url(); ?>">
                         <svg class="min-main-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.07 192.49">
                             <title>Baktun12 Minified Logo</title>
                             <g id="Layer_2" data-name="Layer 2">
@@ -66,6 +67,7 @@
                             <polygon points="0 192.49 39.54 143.03 248.71 143.03 289.07 192.49 0 192.49"/>
                             </g>
                         </svg>
+					</a>
 
 						<?php
 							// Site title or logo.

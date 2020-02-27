@@ -9,11 +9,20 @@ get_header();
 
 <main id="site-content" role="main">
 
-<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
-    <video loop="loop" autoplay="" playsinline="" muted="" id="mejs_24989800046482813_html5" preload="none" src="https://www.youtube.com/watch?v=1gJyppALe_g" style="margin: 0px; width: 1425px; height: 801.562px;">
-        <source type="video/mp4" src="https://www.youtube.com/watch?v=1gJyppALe_g">
-    </video>
-</div>
+
+<section class="marquee">
+    <div class="marquee-video" >
+        <video playsinline="" muted="" onplaying="this.controls=false" autoplay loop>
+        <source src="/wp-content/uploads/2020/02/banner-video.mp4" type='video/mp4;'> <!-- webm, ogg -->
+        </video>
+    </div>
+    <div class="marquee-highlights">
+        <div class="marquee-item">one</div>
+        <div class="marquee-item">two</div>
+        <div class="marquee-item">three</div>
+    </div>
+</section>
+
 
 <div id="info-links">
     <p>Events</p>

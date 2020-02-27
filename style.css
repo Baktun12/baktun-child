@@ -15,9 +15,48 @@ Text Domain: baktun-child
     margin: 0 auto; 
 }
 
+section.marquee {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+}
+
+.marquee-video {
+    margin-top: -100px;
+}
+
+.marquee-highlights {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    z-index: 1;
+    margin-top: -200px;
+    min-height: 20vh;
+}
+
+.marquee-item {
+    
+    flex-grow: 1;
+    background-color: aqua;
+}
+
+.marquee-item:nth-child(2) {
+    background-color: brown;
+}
+
+
+
 @media (min-width: 1000px){
 
     .header-titles .site-title, .header-titles .site-logo, .header-titles .site-description {
         margin: 1rem 0 0 1.4rem;
+    }
+
+    .marquee-highlights {
+        flex-direction: row;
+        margin-top: 0;
+        min-height: 10vh;
     }
 }
