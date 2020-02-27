@@ -28,7 +28,7 @@ Text Domain: baktun-child
 
 
 #links-section{
-  padding:20px;
+  padding: 20px;
   background-color: black;
 }
 
@@ -44,10 +44,26 @@ Text Domain: baktun-child
 }
 
 
+
 /* Button styles in links section */
 
 #events-btn{
   background-color: #3aad21;
+}
+
+.link-btns{
+  transition: 0.3s;
+  outline:0;
+}
+
+.link-btns:hover{
+  border-radius: 50%;
+  list-style: none;
+  text-decoration: none;
+}
+
+#links-section a:visited{
+  text-decoration: none !important;
 }
 
 #videos-btn{
