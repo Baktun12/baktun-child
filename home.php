@@ -9,6 +9,7 @@ get_header();
 
 <main id="site-content" role="main">
 
+<!------- MARQUEE SECTION -------->
 
 <section class="marquee">
     <div class="marquee-video" >
@@ -17,12 +18,23 @@ get_header();
         </video>
     </div>
     <div class="marquee-highlights">
-        <div class="marquee-item">one</div>
-        <div class="marquee-item">two</div>
-        <div class="marquee-item">three</div>
+        <div class="marquee-item">
+            <h4>Release Party</h4>
+            <p>La Sofa Queen Album Release Party</p>
+            <a href="#"><button class="link-btns" >Read More</button></a>
+        </div>
+        <div class="marquee-item">
+            <h4>Census 2020</h4>
+            <p>Telenovela Shoot</p>
+            <a href="#"><button class="link-btns" >Read More</button></a>
+        </div>
+        <div class="marquee-item">
+            <h4>Let Us Know</h4>
+            <p>Where should our attention be? </p>
+            <a href="#"><button class="link-btns" >Events</button></a>
+        </div>
     </div>
 </section>
-
 
 <!------- LINKS SECTION -------->
 
@@ -37,9 +49,7 @@ get_header();
    
    </div>
 
-
 <!---- OPEN BOOK EFFECT - STLL WORKING ON THIS ------->
-
 
 <div id="fun-links">
    

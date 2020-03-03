@@ -8,11 +8,20 @@ Version: 0.1.0
 Text Domain: baktun-child
 */
 
+/*  Header and marquee */
+
+#site-header {
+    border-bottom: solid #bf1d99 4px ;
+}
 
 .min-main-logo {
     display: block;
     width: 80px;
     margin: 0 auto; 
+}
+
+.marquee-video {
+    margin-top: -50px;
 }
 
 section.marquee {
@@ -23,27 +32,38 @@ section.marquee {
     padding: 0;
 }
 
-.marquee-video {
-    margin-top: -100px;
-}
-
 .marquee-highlights {
     display: flex;
     flex-direction: column;
     align-content: stretch;
     z-index: 1;
-    margin-top: -200px;
-    min-height: 20vh;
 }
 
 .marquee-item {
-    
+    padding: 1em;
     flex-grow: 1;
-    background-color: aqua;
+    background-color: #3aad21;
+}
+
+.marquee-item p{
+    float:left;
+    font-size: 1em;
+}
+
+.marquee-item a{
+    float:right;
+}
+
+.marquee h4 {
+    margin: 0 0 .5em .2em;
+}
+
+.marquee-item button {
+    font-size: .6em;
 }
 
 .marquee-item:nth-child(2) {
-    background-color: brown;
+    background-color: #bf1d99;
 }
 
 
@@ -54,22 +74,28 @@ section.marquee {
         margin: 1rem 0 0 1.4rem;
     }
 
+    .marquee-video {
+        margin-top: -100px;
+    }
+
     .marquee-highlights {
         flex-direction: row;
         margin-top: 0;
-        min-height: 10vh;
+        margin-top: -200px;
+    }
+
+    .marquee-item p{
+        font-size: .8em;
     }
 
 }
 
-
 /* Links section */
-
 
 
 #links-section{
   padding: 20px;
-  background-color: black;
+
 }
 
 #links-section ul{
@@ -236,5 +262,5 @@ BOOK POP EFFECT SECTION
   position: absolute;
   margin-right: 100px;
   z-index: 2;
-  
+
 }
