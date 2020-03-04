@@ -87,7 +87,48 @@ section.marquee {
     .marquee-item p{
         font-size: .8em;
     }
+    
+}
 
+
+#logo-wrapper{
+  
+  text-align: center;
+}
+
+
+#logo1{
+  width: 14%;
+  background-color: black;
+  display: inline-block;
+ 
+}
+
+#logo2 {
+  margin-left: 40px;
+  display: inline-block;
+  width: 18%;
+  background-color:black;
+ 
+}
+
+@media (max-width: 750px){
+   
+    #logo-wrapper{
+      flex-direction: column-reverse;
+      padding: 20px;
+    }
+    
+    #logo1{
+      width: 80%;
+    }
+    
+    #logo2{
+      margin-top: 30px;
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+    }
 }
 
 /* Links section */
@@ -250,8 +291,6 @@ BOOK POP EFFECT SECTION
   color: white;
   
 }
-
-
 
 #events{
   text-align:center;
