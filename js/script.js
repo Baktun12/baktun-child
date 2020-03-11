@@ -2,10 +2,10 @@
 
 jQuery(document).ready(function(){
   $("#book").turn({
-                width: 400,
-                height: 300,
+                width: 800,
+                height: 700,
                 autoCenter: true
             });
-   $("#book").turn("next");
+  $("#book").turn("next");
             
 });

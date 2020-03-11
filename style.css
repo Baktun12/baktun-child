@@ -191,17 +191,19 @@ section.marquee {
 BOOK POP EFFECT SECTION
 */
 
-  #book{
-                margin: 5% auto;
-                width: 600px;
-                height: 500px;
-              
-            }
+#book{
+  margin: 0 auto;
+  width: 60%;
+  height: 50%;
+  margin-bottom: 100px;
+  position: relative;
+
+}
             
-            #book .turn-page{
-                -webkit-background-size: 100% 100%;
-                background-size: 100% 100%
-            }
+#book .turn-page{
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%
+        }
 
 .overlay {
   height: 0%;

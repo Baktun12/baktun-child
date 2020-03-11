@@ -87,7 +87,10 @@ get_header();
             <div style="background-color: blue;">Front Page</div>
             <div style="background-color: pink;">Page One</div>
             <div style="background-color: green;">Page Two</div>
-            <div style="background-color: orange;">Page Three</div>    
+            <div style="background-color: orange;">Page Four</div>
+             <div style="background-color: purple;">Page Five</div>
+             <div style="background-color: white;">Back Page</div>
+               
         </div>
    
       
