@@ -191,115 +191,68 @@ section.marquee {
 BOOK POP EFFECT SECTION
 */
 
-#book-effect{
+  #book{
+                margin: 5% auto;
+                width: 600px;
+                height: 500px;
+              
+            }
+            
+            #book .turn-page{
+                -webkit-background-size: 100% 100%;
+                background-size: 100% 100%
+            }
+
+.overlay {
+  height: 0%;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 1200px;
-  background: #fff;
-}
-
-.book {
-  transform-style: preserve-3d;
-  position: relative;
-  height: 300px;
-  cursor: pointer;
-  backface-visibility: visible;
-}
-
-.book2 {
-  transform-style: preserve-3d;
-  position: relative;
-  height: 300px;
-  cursor: pointer;
-  backface-visibility: visible;
-  margin-left: 300px;
-}
-
-
-
-.front, .back{
-  transform-style: preserve-3d;
-  position: absolute;
-  width: 200px;
-  height: 80px;
-  top: 0; left: 0;
-  transform-origin: left center;
-  transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
-}
-
-.front, .back {
-  background: navy;
-  transition: 0.3s;
-}
-
-.front{
-  color: white;
-  border-bottom-right-radius: .5em;
-  border-top-right-radius: .5em;
-}
-
-.back {
-  border-bottom-right-radius: .5em;
-  border-top-right-radius: .5em;
-}
-
-
-.book:hover .front {
-  transform: rotateY(-160deg) scale(1.1);
-  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-  background-color: black;
-  color: transparent;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-  
-}
-
-
-.book:hover .back {
-  transform: rotateY(-20deg) scale(1.1);
-  background-color: #ccc;
-  border-style: solid;
-  border-color: black;
-  width: 200px;
-  height: 200px;
-}
-
-
-.book2:hover .front {
-  transform: rotateY(-160deg) scale(1.1);
-  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-  background-color: black;
-  color: transparent;
-  width: 200px;
-  height: 200px;
-  text-align: center;
+  position: fixed;
   z-index: 1;
-
-  
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+   transform-style: preserve-3d;
 }
 
-
-.book2:hover .back {
-  transform: rotateY(-20deg) scale(1.1);
-  background-color: black;
-  width: 200px;
-  height: 200px;
-  color: white;
-  
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+   transform-style: preserve-3d;
 }
 
-#events{
-  text-align:center;
-  padding: 30px;
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+   transform-style: preserve-3d;
 }
 
-#shows-info{
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
   position: absolute;
-  margin-right: 100px;
-  z-index: 2;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
 
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
