@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
 
 function on() {
   document.getElementById("book1-overlay").style.display = "block";
-    $("#book1").turn("next");
+    $("#book1").turn('page', 2);
 
 }
 
@@ -28,7 +28,7 @@ function off() {
 
 function on2() {
   document.getElementById("book2-overlay").style.display = "block";
-    $("#book2").turn("next");
+    $("#book2").turn('page', 2);
 
 }
 
