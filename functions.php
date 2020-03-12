@@ -14,4 +14,10 @@ function enqueue_scripts(){
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 
-?>
+
+add_action( 'after_setup_theme', 'my_theme_setup' );
+function my_theme_setup(){
+  load_child_theme_textdomain( 'baktun-text', get_stylesheet_directory() . '/languages' );
+}
+
+

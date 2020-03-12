@@ -19,7 +19,7 @@ get_header();
     </div>
     <div class="marquee-highlights">
         <div class="marquee-item">
-            <h4>Release Party</h4>
+	<h4> <?php _e('Release Party', 'baktun-text') ?></h4>
             <p>La Sofa Queen Album Release Party</p>
             <a href="#"><button class="link-btns" >Read More</button></a>
         </div>
