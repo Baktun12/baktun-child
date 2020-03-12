@@ -1,11 +1,21 @@
 // Book Effects and page turning
 
-jQuery(document).ready(function(){
-  $("#book").turn({
-                width: 800,
-                height: 700,
+jQuery(document).ready(function() {
+       $("#book").turn({
+                width: 600,
+                height: 500,
                 autoCenter: true
             });
-  $("#book").turn("next");
-            
+  
 });
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+    $("#book").turn("next");
+
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
