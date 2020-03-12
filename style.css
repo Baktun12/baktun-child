@@ -200,7 +200,7 @@ BOOK POP EFFECT SECTION
   background-color: purple;
 }
 
-#overlay {
+#book1-overlay {
   position: fixed;
   display: none;
   width: 100%;
@@ -212,22 +212,52 @@ BOOK POP EFFECT SECTION
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+#book2-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 
 
 
-#book{
+#book1{
   margin: 0 auto;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
             
-#book .turn-page{
+#book1 .turn-page{
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%
 }
+
+
+#book2{
+  margin: 0 auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+            
+#book2 .turn-page{
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%
+}
+
 
 
 

@@ -60,7 +60,7 @@ get_header();
 </g></svg>
 
 
-<svg id="logo2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438 399"><defs><style>.cls-1{fill:#fff;}</style></defs><title>logo_svg_production</title><path class="cls-1" d="M290,200l-12.89,7.54,16.49,19.27-52.26,30L232.06,238l6.12-3.36c0-16.44,0-33.05,0-49.66,0-.86-.27-2.4-.64-2.47-7.42-1.44-4.32-7.67-5.24-11.84s-.77-8.32-1.14-13.12c8-1.91,15.92-3.92,23.89-5.58a4.85,4.85,0,0,1,3.93,1.84C269.32,169.07,279.53,184.39,290,200Zm-32.47,12.33-2.31,18.51,18.1-6.1Zm-.62-29.4v21.42l1.14.47,8.5-10.12Z"/><path class="cls-1" d="M203.2,204.34c0,14.6-.13,29.21.07,43.81.07,4.47-1.33,6.13-6,6.06-10.64-.15-10.6,0-10.59-10.72q0-40.8,0-81.61c0-7.08.42-7.5,7.3-7.49,9.14,0,9.15,0,9.15,9.42Q203.21,184.08,203.2,204.34Z"/><path class="cls-1" d="M209.68,204.58c0-14.64.18-29.27-.1-43.9-.09-4.92,1.69-6.72,6.37-6.26a22.42,22.42,0,0,0,3.84-.06c4.62-.33,6.39,1.49,6.36,6.39q-.28,43.63,0,87.26c0,4.94-1.79,6.66-6.44,6.12a15.91,15.91,0,0,0-3.84,0c-4.8.62-6.39-1.39-6.31-6.21C209.83,233.48,209.67,219,209.68,204.58Z"/><path class="cls-1" d="M182.32,166.87c-.09,7.12-5.16,12.58-11.65,12.55s-11.45-5.67-11.42-12.78,5.32-12.7,11.65-12.6S182.4,159.87,182.32,166.87Z"/><path class="cls-1" d="M182.31,241.22c-.09,6.91-5.55,12.82-11.69,12.66s-11.46-6.12-11.34-13c.12-7.14,5.15-12.48,11.69-12.44C177.33,228.49,182.4,234.2,182.31,241.22Z"/> <text x="100" y="320" fill="white" font-size="30px" font-weight="bold">PRODUCTIONS</text></svg>   
+<svg style="cursor:pointer" onclick="on2()" id="logo2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438 399"><defs><style>.cls-1{fill:#fff;}</style></defs><title>logo_svg_production</title><path class="cls-1" d="M290,200l-12.89,7.54,16.49,19.27-52.26,30L232.06,238l6.12-3.36c0-16.44,0-33.05,0-49.66,0-.86-.27-2.4-.64-2.47-7.42-1.44-4.32-7.67-5.24-11.84s-.77-8.32-1.14-13.12c8-1.91,15.92-3.92,23.89-5.58a4.85,4.85,0,0,1,3.93,1.84C269.32,169.07,279.53,184.39,290,200Zm-32.47,12.33-2.31,18.51,18.1-6.1Zm-.62-29.4v21.42l1.14.47,8.5-10.12Z"/><path class="cls-1" d="M203.2,204.34c0,14.6-.13,29.21.07,43.81.07,4.47-1.33,6.13-6,6.06-10.64-.15-10.6,0-10.59-10.72q0-40.8,0-81.61c0-7.08.42-7.5,7.3-7.49,9.14,0,9.15,0,9.15,9.42Q203.21,184.08,203.2,204.34Z"/><path class="cls-1" d="M209.68,204.58c0-14.64.18-29.27-.1-43.9-.09-4.92,1.69-6.72,6.37-6.26a22.42,22.42,0,0,0,3.84-.06c4.62-.33,6.39,1.49,6.36,6.39q-.28,43.63,0,87.26c0,4.94-1.79,6.66-6.44,6.12a15.91,15.91,0,0,0-3.84,0c-4.8.62-6.39-1.39-6.31-6.21C209.83,233.48,209.67,219,209.68,204.58Z"/><path class="cls-1" d="M182.32,166.87c-.09,7.12-5.16,12.58-11.65,12.55s-11.45-5.67-11.42-12.78,5.32-12.7,11.65-12.6S182.4,159.87,182.32,166.87Z"/><path class="cls-1" d="M182.31,241.22c-.09,6.91-5.55,12.82-11.69,12.66s-11.46-6.12-11.34-13c.12-7.14,5.15-12.48,11.69-12.44C177.33,228.49,182.4,234.2,182.31,241.22Z"/> <text x="100" y="320" fill="white" font-size="30px" font-weight="bold">PRODUCTIONS</text></svg>   
 
   
 </div><p>
@@ -76,9 +76,23 @@ get_header();
  
  
  
- <div id="overlay">
+ <div id="book1-overlay">
         <button id="close" onclick="off()">Close</button>
-          <div id="book">
+          <div id="book1">
+            <div style="background-color: blue;">Front Page</div>
+            <div style="background-color: pink;">Page One</div>
+            <div style="background-color: green;">Page Two</div>
+            <div style="background-color: orange;">Page Four</div>
+             <div style="background-color: purple;">Page Five</div>
+             <div style="background-color: white;">Back Page</div>
+               
+        </div>
+ </div>
+ 
+ 
+  <div id="book2-overlay">
+        <button id="close" onclick="off2()">Close</button>
+          <div id="book2">
             <div style="background-color: blue;">Front Page</div>
             <div style="background-color: pink;">Page One</div>
             <div style="background-color: green;">Page Two</div>
@@ -89,11 +103,6 @@ get_header();
         </div>
  </div>
 
-
-
- 
- 
- 
   </div>
 </div>
 
