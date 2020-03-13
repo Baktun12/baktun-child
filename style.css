@@ -18,30 +18,69 @@ Text Domain: baktun-text
   background-color: #fff;
 }
 
+.heart-emoji{
+  display:block;
+  text-align: center;
+}
 .min-main-logo {
     display: block;
     width: 80px;
     margin: 0 auto; 
 }
+.home {
+  overflow-y: scroll;
+}
 
 .home h4 {
   text-align: center;
+  margin-bottom: 0;
+  overflow-y: scroll;
 }
 
 .home .sub-heading {
   display: block;
   font-size: 1em;
   text-align: center;
+  margin: 0 0 20px 0
 }
 
 .swipper-container{
   background: #000; 
 }
+/* Grid Styles */
 
-.info-cards{
-  list-style-type: none;
+.box{
+  background-color: green;
+  border-radius: 5px;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.column .box {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  vertical-align: middle;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
 
 @media (min-width: 1000px){
 
@@ -52,12 +91,10 @@ Text Domain: baktun-text
     
 }
 
-
 #logo-wrapper{
   
   text-align: center;
 }
-
 
 #logo1{
   width: 14%;
@@ -146,7 +183,6 @@ Text Domain: baktun-text
 #volunteer-btn{
   background-color: #006fed;
 }
-
 
 
 /*
