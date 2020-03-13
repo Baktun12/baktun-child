@@ -47,7 +47,8 @@ get_header();
                       echo 'style="background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.25), rgba(0, 0, 0, 0.73)),';
                       echo 'url(' . get_the_post_thumbnail_url( get_the_ID(),'medium' ) . ');' ;
                       echo 'background-repeat:no-repeat;';
-                      echo 'background-size: cover;"';
+                      echo 'background-size: cover;';
+                      echo 'background-position: bottom;"';
                     }
                   echo '>'; 
                   echo '<div class="info-card-content">';
@@ -86,7 +87,8 @@ get_header();
                       echo 'style="background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.25), rgba(0, 0, 0, 0.73)),';
                       echo 'url(' . get_the_post_thumbnail_url( get_the_ID(),'medium' ) . ');' ;
                       echo 'background-repeat:no-repeat;';
-                      echo 'background-size: cover;"';
+                      echo 'background-size: cover;';
+                      echo 'background-position: bottom;"';
                     }
                   echo '>';
                   echo '<div class="info-card-content">' ;

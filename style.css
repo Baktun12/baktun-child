@@ -69,26 +69,26 @@ Text Domain: baktun-text
   position: absolute;
   bottom: 0;
   padding: 10px;
-  font-size:.9em;
+  font-size:.7em;
   font-weight: bold;
   color: #fff;
   text-shadow: 0px 0px 8px rgba(0,0,0,.6);
 }
 
 .info-card-content h3 {
-  font-size: 1.8em;
+  font-size: 1.4em;
 }
 
-.box-height-300 {
-  height: 300px;
+.box-height-280 {
+  height: 280px;
 }
 
-.box-height-340 {
-  height: 340px;
+.box-height-240 {
+  height: 240px;
 }
 
-.box-height-360{
-  height: 360px;
+.box-height-260{
+  height: 260px;
 }
 
 /* Create four equal columns that sits next to each other */

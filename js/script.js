@@ -27,7 +27,7 @@ jQuery(document).ready(function() {
         //random hights for grid
         var boxes = $(".info-card");
         boxes.addClass(function( index ) {
-          var sizes = ['300', '340', '360'];
+          var sizes = ['260', '240', '280'];
           return "box-height-" + sizes[Math.floor(Math.random() * 3)];
         });
 
