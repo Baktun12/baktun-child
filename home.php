@@ -12,6 +12,9 @@ get_header();
 
 <!-- Slider main container -->
 <div class="swiper-container">
+<!-- Add Scrollbar -->
+<div class="swiper-scrollbar"></div>
+<div class="swiper-pagination"></div>
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
@@ -19,9 +22,9 @@ get_header();
         <h4><?php _e('For our Community. With Love.','baktun-text'); ?></h4>
         <span class="heart-emoji">❤️</span>
         <span class="sub-heading"><?php _e('Civic Action Teatro in East Salinas California, and beyond.','baktun-text'); ?></span>
-        <div class="grid"> 
+        <div class="grid">         
         <?php
-          // The Query
+          // First loop query for column one 
           $args = array(
             'post_type' => array(
               'tribe_events', 'post',
@@ -54,7 +57,7 @@ get_header();
           /* Restore original Post Data */
           wp_reset_postdata();
 
-          /*  second loop */
+          /*  second loop column two */
           $args = array(
             'post_type' => array(
               'tribe_events', 'post',

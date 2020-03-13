@@ -27,6 +27,14 @@ Text Domain: baktun-text
     width: 80px;
     margin: 0 auto; 
 }
+.swiper-container-horizontal>.swiper-scrollbar {
+  top: 4px;
+}
+
+.swiper-scrollbar-lock{
+  background-color: #ccc;
+}
+
 .home {
   overflow-y: scroll;
 }
