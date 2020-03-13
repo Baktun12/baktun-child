@@ -1,12 +1,17 @@
 <?php
 /**
- * Copied form default index file
- * Home page markup 
- */
-
+*
+* @package WordPress
+* @subpackage Baktun12 Child Theme
+* @since Twenty Fourteen 1.0
+*/
 get_header();
 ?>
+<style>
 
+
+
+</style>
 
 <main id="site-content" role="main">
 
@@ -53,6 +58,7 @@ get_header();
 
 
 </main><!-- #site-content -->
+
 <?php	
 get_footer();
 ?>

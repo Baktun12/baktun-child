@@ -24,52 +24,23 @@ Text Domain: baktun-text
     margin: 0 auto; 
 }
 
-.marquee-video {
-    margin-top: -50px;
+.home h4 {
+  text-align: center;
 }
 
-section.marquee {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 0;
+.home .sub-heading {
+  display: block;
+  font-size: 1em;
+  text-align: center;
 }
 
-.marquee-highlights {
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    z-index: 1;
+.swipper-container{
+  background: #000; 
 }
 
-.marquee-item {
-    padding: 1em;
-    flex-grow: 1;
-    background-color: #3aad21;
+.info-cards{
+  list-style-type: none;
 }
-
-.marquee-item p{
-    float:left;
-    font-size: 1em;
-}
-
-.marquee-item a{
-    float:right;
-}
-
-.marquee h4 {
-    margin: 0 0 .5em .2em;
-}
-
-.marquee-item button {
-    font-size: .6em;
-}
-
-.marquee-item:nth-child(2) {
-    background-color: #bf1d99;
-}
-
 
 
 @media (min-width: 1000px){
@@ -78,19 +49,6 @@ section.marquee {
         margin: 1rem 0 0 1.4rem;
     }
 
-    .marquee-video {
-        margin-top: -100px;
-    }
-
-    .marquee-highlights {
-        flex-direction: row;
-        margin-top: 0;
-        margin-top: -200px;
-    }
-
-    .marquee-item p{
-        font-size: .8em;
-    }
     
 }
 
