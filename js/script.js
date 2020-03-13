@@ -24,6 +24,7 @@ jQuery(document).ready(function() {
             hide: false,
           },
         })
+
         //random hights for grid
         var boxes = $(".info-card");
         boxes.addClass(function( index ) {
@@ -31,7 +32,15 @@ jQuery(document).ready(function() {
           return "box-height-" + sizes[Math.floor(Math.random() * 3)];
         });
 
+        //AJAX for modal
+        $('#manual-ajax').click(function(event) {
+          event.preventDefault();
+          this.blur(); // Manually remove focus from clicked link.
+          $.get(this.href, function(res) {
+            $("<div class='modal'>" + res.description + "</div>").appendTo("#modal-content");
 
+          });
+        });
 
 });
   

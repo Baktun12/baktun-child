@@ -47,7 +47,7 @@ Text Domain: baktun-text
 
 .home .sub-heading {
   display: block;
-  font-size: 1em;
+  font-size: .8em;
   text-align: center;
   margin: 0 0 20px 0
 }
@@ -65,6 +65,11 @@ Text Domain: baktun-text
   position: relative;
 }
 
+.info-card a {
+  height: 100%;
+  display: block;
+}
+
 .info-card-content{
   position: absolute;
   bottom: 0;
@@ -74,9 +79,9 @@ Text Domain: baktun-text
   color: #fff;
   text-shadow: 0px 0px 8px rgba(0,0,0,.6);
 }
-
 .info-card-content h3 {
   font-size: 1.4em;
+  margin-bottom: 2px;
 }
 
 .box-height-280 {

@@ -19,6 +19,7 @@ get_header();
     <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="home swiper-slide">
+        <div id="modal-content"></div>
         <h4><?php _e('For our Community. With Love.','baktun-text'); ?></h4>
         <span class="heart-emoji">❤️</span>
         <span class="sub-heading"><?php _e('Civic Action Teatro in East Salinas California, and beyond.','baktun-text'); ?></span>
@@ -43,21 +44,25 @@ get_header();
                   $the_query->the_post();
                   $ids[] = get_the_ID();
                   echo '<div class="info-card"';
+                  
                     if ( has_post_thumbnail() ){
                       echo 'style="background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.25), rgba(0, 0, 0, 0.73)),';
-                      echo 'url(' . get_the_post_thumbnail_url( get_the_ID(),'medium' ) . ');' ;
+                      echo 'url(' . get_the_post_thumbnail_url( get_the_ID() ,'medium' ) . ');' ;
                       echo 'background-repeat:no-repeat;';
                       echo 'background-size: cover;';
                       echo 'background-position: bottom;"';
                     }
                   echo '>'; 
+                  echo '<a href="http://baktun12.local/wp-json/tribe/events/v1/events/' . get_the_ID() . '" id="manual-ajax" rel="modal:open">'; # link to content modal
                   echo '<div class="info-card-content">';
                   echo '<h3 class="info-card-heading">' ;
-                  echo get_the_title() . ' </h3>' . get_the_content();
+                  echo get_the_title() . ' </h3>' ;
+                  echo '<p>' . get_the_excerpt() . '</p>';
                   if ( get_post_type() == 'tribe_events'){
                     echo tribe_get_start_date() ;
                   }
                   echo '</div>';
+                  echo '</a>';
                   echo '</div>';#end info-card div
                   $loop_count++;
               }
@@ -85,21 +90,22 @@ get_header();
                   echo '<div class="info-card"';
                     if ( has_post_thumbnail() ){
                       echo 'style="background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.25), rgba(0, 0, 0, 0.73)),';
-                      echo 'url(' . get_the_post_thumbnail_url( get_the_ID(),'medium' ) . ');' ;
+                      echo 'url(' . get_the_post_thumbnail_url( get_the_ID() ,'medium' ) . ');' ;
                       echo 'background-repeat:no-repeat;';
                       echo 'background-size: cover;';
                       echo 'background-position: bottom;"';
                     }
                   echo '>';
+                  echo '<a href="http://baktun12.local/wp-json/tribe/events/v1/events/' . get_the_ID() . '" rel="modal:open">'; # link to content modal
                   echo '<div class="info-card-content">' ;
                   echo '<h3 class="info-card-heading">' ;
                   echo get_the_title() . ' </h3>';
-                  echo get_the_content() ;
-                  the_post_thumbnail();
+                  echo '<p>' . get_the_excerpt() . '</p>';
                   if ( get_post_type() == 'tribe_events'){
                     echo tribe_get_start_date() ;
                   }
                   echo '</div>';
+                  echo '</a>';
                   echo '</div>'; #end info-card div
               }
               echo '</div>';
