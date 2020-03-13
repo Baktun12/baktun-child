@@ -85,16 +85,36 @@ get_header();
           wp_reset_postdata();
 
         ?>
-
-
         </div> <!-- end grid -->
-
-
         </div> <!-- end Page 1 -->
-        <div class="swiper-slide"> step 2
-        </div> <!-- end Page 2 -->
-        <div class="swiper-slide"> step 3
-        </div> <!-- end Page 3 -->
+        <?php
+        /*  Loop for pages */
+          $args = array(
+            'post_type' => array(
+              'page',
+            ),
+          );
+          $the_query = new WP_Query( $args );
+          // The Loop
+          if ( $the_query->have_posts() ) {
+              
+              while ( $the_query->have_posts() ) {
+                  $the_query->the_post();
+                  echo '<div class="swiper-slide">';
+                
+                  echo '<h3>' . get_the_title() . ' </h3>' .  get_the_content() ;
+                 
+                  echo '</div>';
+              }
+            
+          } else {
+
+              _e('No Page found.', 'baktun-text');
+          }
+          /* Restore original Post Data */
+          wp_reset_postdata();
+          ?>
+       
 
     </div>
 </div>
