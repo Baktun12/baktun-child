@@ -42,18 +42,22 @@ get_header();
                   if ( $loop_count > $half_count - 1 ) break;
                   $the_query->the_post();
                   $ids[] = get_the_ID();
-                  echo '<div class="box"';
+                  echo '<div class="info-card"';
                     if ( has_post_thumbnail() ){
-                      echo 'style="background-image:url(' . get_the_post_thumbnail_url( get_the_ID(),'medium' ) . ');' ;
+                      echo 'style="background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.25), rgba(0, 0, 0, 0.73)),';
+                      echo 'url(' . get_the_post_thumbnail_url( get_the_ID(),'medium' ) . ');' ;
                       echo 'background-repeat:no-repeat;';
                       echo 'background-size: cover;"';
                     }
-                  echo '>'; #end box div
+                  echo '>'; 
+                  echo '<div class="info-card-content">';
                   echo '<h3 class="info-card-heading">' ;
                   echo get_the_title() . ' </h3>' . get_the_content();
-                  if ( get_post_type() == 'tribe_events')
+                  if ( get_post_type() == 'tribe_events'){
                     echo tribe_get_start_date() ;
+                  }
                   echo '</div>';
+                  echo '</div>';#end info-card div
                   $loop_count++;
               }
               echo '</div>';
@@ -77,21 +81,24 @@ get_header();
               echo '<div class="column col-2">';
               while ( $the_query->have_posts() ) {
                   $the_query->the_post();
-                  echo '<div class="box"';
+                  echo '<div class="info-card"';
                     if ( has_post_thumbnail() ){
-                      echo 'style="background-image:url(' . get_the_post_thumbnail_url( get_the_ID(),'medium' ) . ');' ;
+                      echo 'style="background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.25), rgba(0, 0, 0, 0.73)),';
+                      echo 'url(' . get_the_post_thumbnail_url( get_the_ID(),'medium' ) . ');' ;
                       echo 'background-repeat:no-repeat;';
                       echo 'background-size: cover;"';
                     }
-                  echo '>'; #end box div
+                  echo '>';
+                  echo '<div class="info-card-content">' ;
                   echo '<h3 class="info-card-heading">' ;
                   echo get_the_title() . ' </h3>';
                   echo get_the_content() ;
                   the_post_thumbnail();
-                  if ( get_post_type() == 'tribe_events')
+                  if ( get_post_type() == 'tribe_events'){
                     echo tribe_get_start_date() ;
-                  
+                  }
                   echo '</div>';
+                  echo '</div>'; #end info-card div
               }
               echo '</div>';
           } else {

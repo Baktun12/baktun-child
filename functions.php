@@ -65,3 +65,9 @@ if( !function_exists("update_live_stream_link_settings") ) {
 		register_setting( 'live-stream-settings', 'live-stream-link',  $args ); 
 	} 
 }
+
+#set background featured image TODO
+function baktun_set_background_infocard_image( $id ){
+
+}
+	
