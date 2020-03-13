@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+    
+    .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column .box {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+.box{
+  background-color: green;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#box-body{
+  background-color: black;
+  padding: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1500px;
+  overflow: auto;
+}
+    
+    
+ 
+    
+    
+  </style>
+
+<div id="box-body">
+  
+      <!-- Photo Grid -->
+    <div class="row"> 
+      <div class="column">
+          <div class="box" style="height:80%"><!-- Text between angle brackets is an HTML tag and is not displayed.
+    Most tags, such as the HTML and /HTML tags that surround the contents of
+    a page, come in pairs; some tags, like HR, for a horizontal rule, stand 
+    alone. Comments, such as the text you're reading, are not displayed when
+    the Web page is shown. The information between the HEAD and /HEAD tags is 
+    not displayed. The information between the BODY and /BODY tags is displayed.-->
+    <head>
+    <title>Enter a title, displayed at the top of the window.</title>
+    </head>
+    <!-- The information between the BODY and /BODY tags is displayed.-->
+    <body>
+    <h1>Enter the main heading, usually the same as the title.</h1>
+    <p>Be <b>bold</b> in stating your key points. Put them in a list: </p>
+    <ul>
+    <li>The first item in your list</li>
+    <li>The second item; <i>italicize</i> key words</li>
+    </ul>
+  
+  
+    <!-- And add a copyright notice.--></div>
+          <div class="box" style="height:50%">Text goes here</div>
+          <div class="box" style="height:70%">Text goes here</div>
+      </div>
+      <div class="column">
+           <div class="box" style="height:60%">Text goes here</div>
+           <div class="box" style="height:40%">Text goes here</div>
+           <div class="box" style="height:90%">Text goes here</div>
+      </div>  
+    </div>
+      
+    </div>
+</body>
+</html>
