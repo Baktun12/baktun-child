@@ -24,6 +24,15 @@ jQuery(document).ready(function() {
             hide: false,
           },
         })
+        //random hights for grid
+        var boxes = $(".box");
+        boxes.addClass(function( index ) {
+          var sizes = ['300', '340', '360'];
+          return "box-height-" + sizes[Math.floor(Math.random() * 3)];
+        });
+
+
+
 });
   
 

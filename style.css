@@ -64,6 +64,18 @@ Text Domain: baktun-text
   box-sizing: border-box;
 }
 
+.box-height-300 {
+  height: 300px;
+}
+
+.box-height-340 {
+  height: 340px;
+}
+
+.box-height-360{
+  height: 360px;
+}
+
 /* Create four equal columns that sits next to each other */
 .column {
   -ms-flex: 25%; /* IE10 */

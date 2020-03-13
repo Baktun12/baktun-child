@@ -39,13 +39,18 @@ get_header();
               echo '<div class="column col-1">';
               $ids = array();
               while ( $the_query->have_posts() ) {
-                  if ( $loop_count > $half_count ) break;
+                  if ( $loop_count > $half_count - 1 ) break;
                   $the_query->the_post();
                   $ids[] = get_the_ID();
-                  echo '<div class="box">';
+                  echo '<div class="box"';
+                    if ( has_post_thumbnail() ){
+                      echo 'style="background-image:url(' . get_the_post_thumbnail_url( get_the_ID(),'medium' ) . ');' ;
+                      echo 'background-repeat:no-repeat;';
+                      echo 'background-size: cover;"';
+                    }
+                  echo '>'; #end box div
                   echo '<h3 class="info-card-heading">' ;
-                  echo get_the_title() . ' </h3>' . get_the_content() ;
-                  the_post_thumbnail();
+                  echo get_the_title() . ' </h3>' . get_the_content();
                   if ( get_post_type() == 'tribe_events')
                     echo tribe_get_start_date() ;
                   echo '</div>';
@@ -72,7 +77,13 @@ get_header();
               echo '<div class="column col-2">';
               while ( $the_query->have_posts() ) {
                   $the_query->the_post();
-                  echo '<div class="box">';
+                  echo '<div class="box"';
+                    if ( has_post_thumbnail() ){
+                      echo 'style="background-image:url(' . get_the_post_thumbnail_url( get_the_ID(),'medium' ) . ');' ;
+                      echo 'background-repeat:no-repeat;';
+                      echo 'background-size: cover;"';
+                    }
+                  echo '>'; #end box div
                   echo '<h3 class="info-card-heading">' ;
                   echo get_the_title() . ' </h3>';
                   echo get_the_content() ;
