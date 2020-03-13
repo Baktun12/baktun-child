@@ -1,19 +1,27 @@
 // Book Effects and page turning
 
 jQuery(document).ready(function() {
-       $("#book1").turn({
+      /* $("#book1").turn({
                 width: 600,
                 height: 500,
                 autoCenter: true
             });
-       
        
        $("#book2").turn({
                 width: 600,
                 height: 500,
                 autoCenter: true
             });
+            */
+
+        //initialize swiper when document ready
+        var mySwiper = new Swiper ('.swiper-container', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true
+        })
 });
+  
 
 function on() {
   document.getElementById("book1-overlay").style.display = "block";

@@ -41,7 +41,6 @@ get_header();
         <h4><?php _e('Teatro for the People','baktun-text'); ?></h4>
         <span class="sub-heading"><?php _e('Exploring the art of teatro as a tool for social change in East Salinas Ca. and beyond.','baktun-text'); ?></span>
         <?php
- 
           // The Query
           $args = array(
             'post_type' => array(
@@ -66,19 +65,7 @@ get_header();
           }
           /* Restore original Post Data */
           wp_reset_postdata();
-
-          $events = tribe_get_events();
-          ?>
-          <pre> 
-          <?php
-          echo '<ul>';
-          foreach ( $events as $event ) {
-            echo '<li>' . tribe_get_start_date($event) . '</li>';
-          }
-          echo '</ul>';
-          ?>
-          </pre>
-
+        ?>
         </div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
@@ -88,15 +75,7 @@ get_header();
 
 
 </main><!-- #site-content -->
-<!-- remove swipper css form header.js -->
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script>
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-  })
-  </script>
+
 <?php	
 get_footer();
 ?>
