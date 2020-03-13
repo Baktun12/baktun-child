@@ -46,13 +46,15 @@ get_header();
                   echo '<h3 class="info-card-heading">' ;
                   echo get_the_title() . ' </h3>' . get_the_content() ;
                   the_post_thumbnail();
-                  echo tribe_get_start_date() . '</div>';
+                  if ( get_post_type() == 'tribe_events')
+                    echo tribe_get_start_date() ;
+                  echo '</div>';
                   $loop_count++;
               }
               echo '</div>';
           } else {
 
-              _e('No Posts found.', 'baktun-text');
+              /* no Posts Found */
           }
           /* Restore original Post Data */
           wp_reset_postdata();
@@ -72,14 +74,18 @@ get_header();
                   $the_query->the_post();
                   echo '<div class="box">';
                   echo '<h3 class="info-card-heading">' ;
-                  echo get_the_title() . ' </h3>' .  get_the_content() ;
+                  echo get_the_title() . ' </h3>';
+                  echo get_the_content() ;
                   the_post_thumbnail();
-                  echo tribe_get_start_date() . '</div>';
+                  if ( get_post_type() == 'tribe_events')
+                    echo tribe_get_start_date() ;
+                  
+                  echo '</div>';
               }
               echo '</div>';
           } else {
 
-              _e('No Posts found.', 'baktun-text');
+              /* No posts found */
           }
           /* Restore original Post Data */
           wp_reset_postdata();
@@ -109,7 +115,7 @@ get_header();
             
           } else {
 
-              _e('No Page found.', 'baktun-text');
+              /* No Extra Pages Found */
           }
           /* Restore original Post Data */
           wp_reset_postdata();
