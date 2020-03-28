@@ -68,8 +68,16 @@ if( !function_exists("update_live_stream_link_settings") ) {
 	} 
 }
 
-#set background featured image TODO
-function baktun_set_background_infocard_image( $id ){
+# set background featured image TODO
+function baktun_get_card_link( $id ){
+	$type = get_post_type( $id );
+	if ( $type == 'tribe_events' ) {
+		return get_site_url() . '/wp-json/tribe/events/v1/events/' . $id;
+	} else if ( $type == 'post' ){
+		return get_site_url() . '/wp-json/wp/v2/posts/' . $id;
+	} else {
+		return '#';
+	}
 
 }
 	

@@ -33,17 +33,27 @@ jQuery(document).ready(function() {
         });
 
         //AJAX for modal
-        $('#manual-ajax').click(function(event) {
-          event.preventDefault();
+        $('.ajax').click(function(e) {
+          e.preventDefault();
           this.blur(); // Manually remove focus from clicked link.
           $.get(this.href, function(res) {
-            $("<div class='modal'>" + res.description + "</div>").appendTo("#modal-content");
-
-          });
+          let modal = document.createElement('div');
+          modal.classList.add('modal');
+          console.log(res);
+          let title = (typeof res.title === 'object') ? res.title.rendered : res.title ;
+          let newContent = `<h2>${title}</h2>`
+          modal.innerHTML= newContent;
+          let modalWrapper = document.getElementById('modal-content');
+          modalWrapper.appendChild(modal);
+          }).done( function (){
+            $('#modal-content > .modal').modal();
+          }); 
         });
-
 });
-  
+
+
+   
+
 
 function on() {
   document.getElementById("book1-overlay").style.display = "block";
