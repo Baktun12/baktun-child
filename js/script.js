@@ -32,16 +32,16 @@ jQuery(document).ready(function() {
           return "box-height-" + sizes[Math.floor(Math.random() * 3)];
         });
 
-        //AJAX for modal
+        //AJAX for modal for post content
         $('.ajax').click(function(e) {
           e.preventDefault();
           this.blur(); // Manually remove focus from clicked link.
           $.get(this.href, function(res) {
           let modal = document.createElement('div');
           modal.classList.add('modal');
-          console.log(res);
-          let title = (typeof res.title === 'object') ? res.title.rendered : res.title ;
-          let newContent = `<h2>${title}</h2>`
+          let title = (typeof res.title === 'object') ? res.title.rendered : res.title;
+          let content = ( typeof res.description == 'undefined') ? res.content.rendered : res.description;          
+          let newContent = `<h2>${title}</h2><p>${content}</p>`;
           modal.innerHTML= newContent;
           let modalWrapper = document.getElementById('modal-content');
           modalWrapper.appendChild(modal);
