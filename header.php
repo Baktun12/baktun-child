@@ -83,7 +83,7 @@
 							<span class="toggle-icon">
 								<?php twentytwenty_the_theme_svg( 'ellipsis' ); ?>
 							</span>
-							<span class="toggle-text"><?php _e( 'Menu', 'twentytwenty' ); ?></span>
+							<span class="toggle-text"><?php _e( 'Español', 'baktun-text' ); ?></span>
 						</span>
 					</button><!-- .nav-toggle -->
 

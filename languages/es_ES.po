@@ -1,18 +1,9 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Project-Id-Version: Baktun12\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: Baktun12\n"
-"MIME-Version: 1.0\n"
-"Language: es\n"
-"X-Generator: Poedit 2.3\n"
 
 #. Text in echo
-#: home.php:22
-msgid "Release Party"
-msgstr "Fiesta"
+#: header.php:86
+msgid "Español"
+msgstr "English"
