@@ -19,11 +19,22 @@ get_header();
     <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="home swiper-slide">
-        <div id="modal-content"></div>
-        <h4><?php _e('For our Community. With Love.','baktun-text'); ?></h4>
-        <span class="heart-emoji">❤️</span>
-        <span class="sub-heading"><?php _e('Civic Action Teatro in East Salinas California, and beyond.','baktun-text'); ?></span>
-        <div class="grid">         
+        <div id="modal-content"></div>   
+        <div class="header" style="background-image: linear-gradient(to bottom, transparent,black),url('<?php echo get_stylesheet_directory_uri() . '/images/garner_st_med.jpg'?>');
+          height: 212px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          color: white;
+          text-shadow: black 2px 2px 15px;">
+
+          <?php 
+          $post_id = 43;
+          echo apply_filters('the_content', get_post_field('post_content', $post_id )); ?>
+          <!-- <h4><?php #_e('For our Community. With Love.','baktun-text'); ?></h4>
+          <span class="heart-emoji">❤️</span>
+          <span class="sub-heading"><?php #_e('Civic Action Teatro in East Salinas California, and beyond.','baktun-text'); ?></span> -->
+        </div>
+          <div class="grid">         
         <?php
           // First loop query for column one 
           $args = array(
@@ -87,6 +98,7 @@ get_header();
             'post_type' => array(
               'page',
             ),
+            'post__not_in' => array(43)
           );
           $the_query = new WP_Query( $args );
           // The Loop

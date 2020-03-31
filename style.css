@@ -9,9 +9,9 @@ Text Domain: baktun-text
 */
 
 /*  Header and marquee */
-
+/*#bf1d99*/
 #site-header {
-    border-bottom: solid #bf1d99 4px ;
+    border-bottom: solid #29c500 4px ;
 }
 
 #site-content{
@@ -29,17 +29,25 @@ Text Domain: baktun-text
 }
 .swiper-container-horizontal>.swiper-scrollbar {
   top: 4px;
+  background-color: #e2e2e2;
 }
 
 .swiper-scrollbar-lock{
   background-color: #ccc;
 }
 
+
 .home {
   overflow-y: scroll;
+  background-color: black;
+}
+
+.header{
+margin-top: -20px;
 }
 
 .home h4 {
+  padding-top: 50px;
   text-align: center;
   margin-bottom: 0;
   overflow-y: scroll;
@@ -54,6 +62,7 @@ Text Domain: baktun-text
 
 .swipper-container{
   background: #000; 
+
 }
 
 .translate-link{
@@ -69,6 +78,7 @@ Text Domain: baktun-text
   padding: 5px;
   box-sizing: border-box;
   position: relative;
+  border: #525252 solid 2px; /* #ff7300 */
 }
 
 .info-card a {
