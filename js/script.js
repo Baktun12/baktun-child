@@ -50,6 +50,9 @@ jQuery(document).ready(function() {
           }); 
         });
 
+        let translationLink = document.querySelector(".wpml-ls-native").parentElement.href;
+        let translationNode = document.querySelector(".translate-link");
+        translationNode.href = translationLink;
 
 });
 
