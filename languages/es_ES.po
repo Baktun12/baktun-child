@@ -7,3 +7,13 @@ msgstr ""
 #: header.php:86
 msgid "Español"
 msgstr "English"
+
+#. Text in echo
+#: home.php:23
+msgid "For our Community. With Love."
+msgstr "Para nuestra comunidad. Con cariño."
+
+#. Text in echo
+#: home.php:25
+msgid "Civic Action Teatro in East Salinas California, and beyond."
+msgstr "Teatro para el pueblo en Salinas California, y más allá."

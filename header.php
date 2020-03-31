@@ -137,7 +137,7 @@
 						<div class="header-toggles hide-no-js">
 
 						<?php
-						if ( has_nav_menu( 'expanded' ) ) {
+						/* if ( has_nav_menu( 'expanded' ) ) {
 							?>
 
 							<div class="toggle-wrapper nav-toggle-wrapper has-expanded-menu">
@@ -154,7 +154,7 @@
 							</div><!-- .nav-toggle-wrapper -->
 
 							<?php
-						}
+						} */
 
 						if ( true === $enable_header_search ) {
 							?>
