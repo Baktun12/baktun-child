@@ -49,6 +49,8 @@ jQuery(document).ready(function() {
             $('#modal-content > .modal').modal();
           }); 
         });
+
+
 });
 
 

@@ -55,6 +55,13 @@ Text Domain: baktun-text
 .swipper-container{
   background: #000; 
 }
+
+.translate-link{
+  display:block;
+  color: inherit; 
+  text-decoration: inherit; 
+  position: relative;
+}
 /* Grid Styles */
 
 .info-card{
