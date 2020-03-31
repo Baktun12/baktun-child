@@ -20,7 +20,8 @@ get_header();
         <!-- Slides -->
         <div class="home swiper-slide">
         <div id="modal-content"></div>   
-        <div class="header" style="background-image: linear-gradient(to bottom, transparent,black),url('<?php echo get_stylesheet_directory_uri() . '/images/garner_st_med.jpg'?>');
+        <?php $home_id = 43;?>
+        <div class="header" style="background-image: linear-gradient(to bottom, transparent,black),url('<?php echo get_the_post_thumbnail_url( $home_id ,'full' )?>');
           height: 212px;
           background-size: cover;
           background-repeat: no-repeat;
@@ -30,9 +31,6 @@ get_header();
           <?php 
           $post_id = 43;
           echo apply_filters('the_content', get_post_field('post_content', $post_id )); ?>
-          <!-- <h4><?php #_e('For our Community. With Love.','baktun-text'); ?></h4>
-          <span class="heart-emoji">❤️</span>
-          <span class="sub-heading"><?php #_e('Civic Action Teatro in East Salinas California, and beyond.','baktun-text'); ?></span> -->
         </div>
           <div class="grid">         
         <?php

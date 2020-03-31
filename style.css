@@ -36,14 +36,9 @@ Text Domain: baktun-text
   background-color: #ccc;
 }
 
-
 .home {
   overflow-y: scroll;
   background-color: black;
-}
-
-.header{
-margin-top: -20px;
 }
 
 .home h4 {
