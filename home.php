@@ -20,7 +20,7 @@ get_header();
         <!-- Slides -->
         <div class="home swiper-slide">
         <div id="modal-content"></div>   
-        <?php $home_id = 43;?>
+        <?php $home_id = 50;?>
         <div class="header" style="background-image: linear-gradient(to bottom, transparent,black),url('<?php echo get_the_post_thumbnail_url( $home_id ,'full' )?>');
           height: 212px;
           background-size: cover;
@@ -29,8 +29,7 @@ get_header();
           text-shadow: black 2px 2px 15px;">
 
           <?php 
-          $post_id = 43;
-          echo apply_filters('the_content', get_post_field('post_content', $post_id )); ?>
+          echo apply_filters('the_content', get_post_field('post_content', $home_id )); ?>
         </div>
           <div class="grid">         
         <?php

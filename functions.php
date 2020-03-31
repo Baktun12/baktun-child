@@ -91,7 +91,7 @@ function programmatically_create_post() {
 	$author_id = 1;
 	$slug = 'home';
 	$title = 'Home';
-	$home_id = 43; // we want the home to be 43
+	$home_id = 50; // we want the home to be 50
 
 	// If the page doesn't already exist, then create it
 	if( !get_post_status( $home_id ) ) {
@@ -99,7 +99,7 @@ function programmatically_create_post() {
 		// Set the post ID so that we know the post was created successfully
 		$post_id = wp_insert_post(
 			array(
-				'import_id'         => 43,
+				'import_id'         =>  $home_id,
 				'comment_status'	=>	'closed',
 				'ping_status'		=>	'closed',
 				'post_author'		=>	$author_id,
