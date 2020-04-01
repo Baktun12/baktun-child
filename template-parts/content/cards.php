@@ -1,8 +1,8 @@
 <?php
 
 echo '<div class="info-card"';
-    if ( has_post_thumbnail() ){
-        echo 'style="background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 75)),';
+    if ( has_post_thumbnail() ){ 
+        echo 'style="background-image:linear-gradient(to bottom, transparent, black),';
         echo 'url(' . get_the_post_thumbnail_url( get_the_ID() ,'medium' ) . ');' ;
         echo 'background-repeat:no-repeat;';
         echo 'background-size: cover;';
