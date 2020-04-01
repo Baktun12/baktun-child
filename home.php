@@ -20,7 +20,7 @@ get_header();
         <!-- Slides -->
         <div class="home swiper-slide">
         <div id="modal-content"></div>   
-        <?php $home_id = 50;?>
+        <?php $home_id = 22;?>
         <div class="header" style="background-image: linear-gradient(to bottom, transparent,black),url('<?php echo get_the_post_thumbnail_url( $home_id ,'full' )?>');
           height: 212px;
           background-size: cover;
@@ -95,7 +95,7 @@ get_header();
             'post_type' => array(
               'page',
             ),
-            'post__not_in' => array(43)
+            'post__not_in' => array($home_id)
           );
           $the_query = new WP_Query( $args );
           // The Loop

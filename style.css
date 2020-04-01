@@ -44,7 +44,7 @@ Text Domain: baktun-text
 .home h4 {
   padding-top: 50px;
   text-align: center;
-  margin-bottom: 0;
+  margin: 0;
   overflow-y: scroll;
 }
 
