@@ -20,7 +20,17 @@ get_header();
         <!-- Slides -->
         <div class="home swiper-slide">
         <div id="modal-content"></div>   
-        <?php $home_id = 22;?>
+        <?php 
+        $home_id = 22;
+        $args = array(
+          'page_id' => $home_id,
+        );
+        $the_query = new WP_Query( $args );
+        $the_query->the_post();
+
+        
+        
+        ?>
         <div class="header" style="background-image: linear-gradient(to bottom, transparent,black),url('<?php echo get_the_post_thumbnail_url( $home_id ,'full' )?>');
           height: 212px;
           background-size: cover;
@@ -29,7 +39,8 @@ get_header();
           text-shadow: black 2px 2px 15px;">
 
           <?php 
-          echo apply_filters('the_content', get_post_field('post_content', $home_id )); ?>
+          the_content(); 
+          wp_reset_postdata();?>
         </div>
           <div class="grid">         
         <?php
