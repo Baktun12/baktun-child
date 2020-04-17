@@ -2,8 +2,9 @@
 
 echo '<div class="info-card"';
     if ( has_post_thumbnail() ){ 
-        echo 'style="background-image:linear-gradient(to bottom, transparent, black),';
-        echo 'url(' . get_the_post_thumbnail_url( get_the_ID() ,'medium' ) . ');' ;
+        echo 'style="background-color:#1d1b0c;';
+        echo 'background-image:linear-gradient(to bottom, transparent, black),';
+        echo 'url(' . get_the_post_thumbnail_url( get_the_ID() ,'full' ) . ');' ; 
         echo 'background-repeat:no-repeat;';
         echo 'background-size: cover;';
         echo 'background-position: bottom;"';

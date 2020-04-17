@@ -11,28 +11,18 @@ get_header();
 <main id="site-content" role="main">
 
 <!-- Slider main container -->
-<div class="swiper-container">
-<!-- Add Scrollbar -->
-<div class="swiper-scrollbar"></div>
-<div class="swiper-pagination"></div>
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="home swiper-slide">
-        <div id="modal-content"></div>   
-        <?php 
+
+<?php 
         $home_id = 22;
         $args = array(
           'page_id' => $home_id,
         );
         $the_query = new WP_Query( $args );
         $the_query->the_post();
-
-        
-        
+                
         ?>
         <div class="header" style="background-image: linear-gradient(to bottom, transparent,black),url('<?php echo get_the_post_thumbnail_url( $home_id ,'full' )?>');
-          height: 212px;
+          height: 180px;
           background-size: cover;
           background-repeat: no-repeat;
           color: white;
@@ -42,6 +32,16 @@ get_header();
           the_content(); 
           wp_reset_postdata();?>
         </div>
+<div class="swiper-container">
+<!-- Add Scrollbar -->
+<div class="swiper-scrollbar"></div>
+<div class="swiper-pagination"></div>
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="home swiper-slide">
+        <div id="modal-content"></div>   
+        
           <div class="grid">         
         <?php
           // First loop query for column one 

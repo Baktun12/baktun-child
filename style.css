@@ -18,6 +18,10 @@ Text Domain: baktun-text
   background-color: #fff;
 }
 
+.header-inner {
+  padding: 1.8rem 0;
+}
+
 .heart-emoji{
   display:block;
   text-align: center;
@@ -30,6 +34,7 @@ Text Domain: baktun-text
 .swiper-container-horizontal>.swiper-scrollbar {
   top: 4px;
   background-color: #e2e2e2;
+  margin: 4px 0; 
 }
 
 .swiper-scrollbar-lock{
@@ -58,6 +63,10 @@ Text Domain: baktun-text
 .swipper-container{
   background: #000; 
 
+}
+
+.grid {
+  margin-top: 16px;
 }
 
 .translate-link{
@@ -132,6 +141,12 @@ Text Domain: baktun-text
   flex-wrap: wrap;
   padding: 0 4px;
   box-sizing: border-box;
+}
+
+@media (min-width: 501px){
+  .info-card{
+    background-size: contain!important;
+  }
 }
 
 @media (min-width: 1000px){

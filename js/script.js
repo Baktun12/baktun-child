@@ -14,17 +14,6 @@ jQuery(document).ready(function() {
             });
             */
 
-        //initialize swiper when document ready
-        var mySwiper = new Swiper ('.swiper-container', {
-          // Optional parameters
-          direction: 'horizontal',
-          loop: false,
-          scrollbar: {
-            el: '.swiper-scrollbar',
-            hide: false,
-          },
-        })
-
         //random hights for grid
         var boxes = $(".info-card");
         boxes.addClass(function( index ) {
@@ -49,11 +38,43 @@ jQuery(document).ready(function() {
             $('#modal-content > .modal').modal();
           }); 
         });
-
+        //mobile translation button
+        if (document.querySelector(".wpml-ls-native") != null) {
         let translationLink = document.querySelector(".wpml-ls-native").parentElement.href;
         let translationNode = document.querySelector(".translate-link");
-        translationNode.href = translationLink;
-
+        translationNode.href = translationLink; 
+        }
+        
+        //initialize swiper when document ready
+        //desktop view adjust
+        let sliderAdjust =  function(){
+          let w = document.documentElement.clientWidth;
+          if( w > 1000 ){
+            var mySwiper = new Swiper ('.swiper-container', {
+              // Optional parameters
+              direction: 'horizontal',
+              loop: false,
+              slidesPerView:2,
+              scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false,
+              },
+            });
+          } else {
+            var mySwiper = new Swiper ('.swiper-container', {
+              // Optional parameters
+              direction: 'horizontal',
+              loop: false,
+              slidesPerView:1,
+              scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false,
+              },
+            });
+          }
+        };
+        window.addEventListener("resize", sliderAdjust);
+        sliderAdjust();
 });
 
 
