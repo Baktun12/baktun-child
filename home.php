@@ -8,7 +8,7 @@ get_header();
 ?>
 
 
-<main id="site-content" role="main">
+<main id="site-content" class="home" role="main">
 
 <!-- Slider main container -->
 
@@ -39,7 +39,7 @@ get_header();
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="home swiper-slide">
+        <div class="icons swiper-slide">
         <div id="modal-content"></div>   
         
           <div class="grid">         
