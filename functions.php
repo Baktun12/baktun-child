@@ -115,7 +115,7 @@ function programmatically_create_post() {
 
     		// Arbitrarily use -2 to indicate that the page with the title already exists
 			$post_id = -2;
-			error_log("error creating home page");
+			error_log("error creating home page: page status: " . get_post_status( $home_id ));
 
 	} // end if
 
