@@ -42,7 +42,6 @@ Text Domain: baktun-text
 }
 
 .home {
-  overflow-y: scroll;
   background-color: black;
 }
 
@@ -50,7 +49,6 @@ Text Domain: baktun-text
   padding-top: 50px;
   text-align: center;
   margin: 0;
-  overflow-y: scroll;
 }
 
 .home .sub-heading {
