@@ -43,6 +43,9 @@ jQuery(document).ready(function() {
                 el: '.swiper-scrollbar',
                 hide: false,
               },
+              autoplay: {
+                delay: 5000,
+              },
             });
           } else {
             var mySwiper = new Swiper ('.swiper-container', {
@@ -53,6 +56,9 @@ jQuery(document).ready(function() {
               scrollbar: {
                 el: '.swiper-scrollbar',
                 hide: false,
+              },
+              autoplay: {
+                delay: 5000,
               },
             });
           }
