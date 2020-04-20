@@ -4,7 +4,9 @@
     <?php
     if ( has_post_thumbnail() ){ ?>
 
-        style="background-color:#1d1b0c;background-image:linear-gradient(to bottom, transparent, black),
+        style="background-color:
+        <?php echo get_post_meta( get_the_ID() , "card-bg-color", true) ?>
+        ;background-image:linear-gradient(to bottom, transparent, black),
         url(' <?php echo get_the_post_thumbnail_url( get_the_ID() ,'full' ) ?> ');
         background-repeat:no-repeat;
         background-size: cover;
