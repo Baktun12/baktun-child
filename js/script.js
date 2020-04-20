@@ -46,6 +46,8 @@ jQuery(document).ready(function() {
               autoplay: {
                 delay: 5000,
               },
+              stopOnLastSlide: true,
+              disableOnInteraction: true,
             });
           } else {
             var mySwiper = new Swiper ('.swiper-container', {
@@ -60,6 +62,8 @@ jQuery(document).ready(function() {
               autoplay: {
                 delay: 5000,
               },
+              stopOnLastSlide: true,
+              disableOnInteraction: true,
             });
           }
         };

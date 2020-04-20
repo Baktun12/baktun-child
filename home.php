@@ -114,12 +114,13 @@ get_header();
               while ( $the_query->have_posts() ) {
                   $the_query->the_post();
                   echo '<div class="swiper-slide">';
-
-                  get_the_post_thumbnail( 'full' );
-                
+                  if (has_post_thumbnail(get_the_ID())){
+                  echo get_the_post_thumbnail( get_the_ID(), 'full' );
+                  }
+                  echo '<div class="page-content">';
                   echo '<h3>' . get_the_title() . ' </h3>' .  get_the_content() ;
                  
-                  echo '</div>';
+                  echo '</div></div>';
               }
             
           } else {

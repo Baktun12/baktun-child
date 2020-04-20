@@ -36,6 +36,20 @@ Text Domain: baktun-text
   color: #ccc;
 }
 
+.page-content {
+  padding: 25px;
+}
+
+.page-content iframe{
+  margin-top: 25px;
+  height: 350px;
+}
+
+.swiper-slide img{
+  z-index: 0;
+  margin-top: 25px;
+}
+
 .swiper-container-horizontal>.swiper-scrollbar {
   top: 4px;
   background-color: #e2e2e2;
