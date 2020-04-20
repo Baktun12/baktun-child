@@ -31,6 +31,12 @@ Text Domain: baktun-text
     width: 80px;
     margin: 0 auto; 
 }
+
+.swiper-wrapper {
+  background-color: #000;
+  color: #ccc;
+}
+
 .swiper-container-horizontal>.swiper-scrollbar {
   top: 4px;
   background-color: #e2e2e2;
