@@ -39,8 +39,7 @@ get_header();
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="icons swiper-slide">
-        <div id="modal-content"></div>   
+        <div class="icons swiper-slide"> 
         
           <div class="grid">         
         <?php
@@ -115,6 +114,8 @@ get_header();
               while ( $the_query->have_posts() ) {
                   $the_query->the_post();
                   echo '<div class="swiper-slide">';
+
+                  get_the_post_thumbnail( 'full' );
                 
                   echo '<h3>' . get_the_title() . ' </h3>' .  get_the_content() ;
                  

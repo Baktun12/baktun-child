@@ -10,8 +10,6 @@ function enqueue_scripts(){
 	wp_enqueue_script('turnminjs', get_stylesheet_directory_uri() . '/js/turn.min.js', array('jquery'), false, false);
 	wp_enqueue_script('swiper', get_stylesheet_directory_uri() . '/js/swiper.min.js', array('jquery'), false, true);
 	wp_enqueue_style( 'swiper', get_stylesheet_directory_uri() . '/css/swiper.min.css',null, false, 'all');
-	wp_enqueue_script('modal', get_stylesheet_directory_uri() . '/js/modal.min.js', array('jquery'), false, true);
-	wp_enqueue_style( 'modal', get_stylesheet_directory_uri() . '/css/modal.min.css',null, false, 'all');
 	wp_enqueue_script('scriptjs', get_stylesheet_directory_uri() . '/js/script.js', array('jquery','swiper'), false, false);
 
 }
