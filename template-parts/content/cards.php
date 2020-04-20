@@ -15,7 +15,10 @@
     }
     ?>
     > 
-    <a href=" <?php echo the_permalink() ?>" class="ajax page-<?php echo get_the_ID() ?>"> 
+    <?php if ( get_post_meta( get_the_ID() , "custom-url", true) == "" ) { ?> 
+        <a href=" <?php echo the_permalink() ?>" class="ajax page-<?php echo get_the_ID() ?>"> <?php } else {?>
+    <a href=" <?php echo get_post_meta( get_the_ID() , "custom-url", true) ?>" class="ajax page-<?php echo get_the_ID() ?>"> 
+    <?php }?>
     <div class="info-card-content">
     <h3 class="info-card-heading">
     <?php echo get_the_title() ?> </h3>
