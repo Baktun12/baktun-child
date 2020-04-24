@@ -47,7 +47,8 @@ get_header();
           $args = array(
             'post_type' => array(
               'tribe_events', 'post',
-            )
+            ),
+            'category__not_in' => 14
           );
           $the_query = new WP_Query( $args );
           // The Loop
@@ -78,7 +79,8 @@ get_header();
             'post_type' => array(
               'tribe_events', 'post',
             ),
-            'post__not_in' => $ids
+            'post__not_in' => $ids,
+            'category__not_in' => 14
           );
           $the_query = new WP_Query( $args );
           // The Loop

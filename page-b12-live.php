@@ -364,6 +364,10 @@ margin-top: -15px;
           }
         });
 
+        audio.addEventListener('waiting', (event) => {
+          console.log('Video is waiting for more data.');
+        });
+
         // Time/song update
         audio.addEventListener('timeupdate', updateProgress);
 
