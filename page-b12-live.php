@@ -192,7 +192,7 @@ margin-top: -15px;
 <main id="site-content" role="main">
 <!-- Slider main container -->
 <h1>B12 Live!</h1>
-<p class="sub">Podcasting from East Salinas, Salaztlán - Baktun12 presents a mix of teatro and poetry.</p>
+<p class="sub">Amidst the COVID-19 outbreak, Baktun12 comes together to bring you the voices of our partners and community, in the form of spoken word and audio theatre.</p>
 
     <div class="music-container" id="music-container">
       <div class="music-info">
