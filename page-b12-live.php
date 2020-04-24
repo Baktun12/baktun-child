@@ -30,6 +30,7 @@ get_header();
 #site-content > .sub {
     text-align: center;
     padding: 0 30px;
+    font-size: .8em;
 }
 
 .music-container {
